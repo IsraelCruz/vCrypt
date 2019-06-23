@@ -29,7 +29,7 @@ public class CopyDirectory
 
         if(!srcFolder.exists())
         {
-            //System.out.println("Directory does not exist.");
+            System.out.println("Directory does not exist.");
             System.exit(0);
         }
         else
@@ -55,8 +55,8 @@ public class CopyDirectory
             if(!dest.exists())
             {
                 dest.mkdir();
-                // System.out.println("Directory copied from "
-                // + src + "  to " + dest);
+                System.out.println("Directory copied from "
+                + src + "  to " + dest);
             }
 
             //list all the directory contents
@@ -78,7 +78,7 @@ public class CopyDirectory
 
             String st;
 
-            boolean firstLine = true; //fixes extra line error
+            boolean firstLine = true;
             while ((st = br.readLine()) != null)
             {
                 if(!firstLine)
@@ -100,7 +100,6 @@ public class CopyDirectory
                 }
             }
             bw.close();
-
         }
     }
 }

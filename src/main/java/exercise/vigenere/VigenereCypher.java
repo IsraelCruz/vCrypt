@@ -23,11 +23,10 @@ public class VigenereCypher
     {
         createCharacterSet(characters);
 
-       // StringBuilder sb = new StringBuilder();
         int skips = 0;
         String sb = "";
 
-        for(int i = 0 ; i < text.length(); i++)  // TODO: Handle case where key contains value not in map.
+        for(int i = 0 ; i < text.length(); i++)
         {
             if(cipherCharactersPositions.containsKey(text.charAt(i)))
             {
@@ -40,7 +39,6 @@ public class VigenereCypher
             else
             {
                 skips++;
-               // sb.append(text.charAt(i));
                 sb += (text.charAt(i));
             }
         }
@@ -51,11 +49,10 @@ public class VigenereCypher
     {
         createCharacterSet(characters);
 
-        //StringBuilder sb = new StringBuilder();
         String sb = "";
         int skips = 0;
 
-        for(int i = 0 ; i < text.length(); i++)  // TODO: Handle case where key contains value not in map.
+        for(int i = 0 ; i < text.length(); i++)
         {
             if(cipherCharactersPositions.containsKey(text.charAt(i)))
             {
@@ -66,8 +63,7 @@ public class VigenereCypher
             else
             {
                 skips++;
-                //sb.append(text.charAt(i));
-                                sb += (text.charAt(i));
+                sb += (text.charAt(i));
 
             }
         }
